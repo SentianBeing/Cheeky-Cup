@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root {
+  /* Brand Guidelines Primary Colors */
+  --pale-pink: #FAA7E0;
+  --tyrian-purple: #58032A;
+  --rusty-red: #E1233C;
+  --ivory: #FFFFF1;
+
+  /* Brand Guidelines Secondary Colors */
+  --mimi-pink: #FFE0F5;
+
+  /* Glossier-inspired & Semantic Palette */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FFFFF1;
+  --bg-card: #FFFFF1;
+  --bg-pink: #FFE0F5;
+  --text-main: #1A1A1A;
+  --text-muted: #666666;
+  --text-subtle: #8E8E8E;
+  
+  --brand-red: #E1233C;
+  --brand-wine: #58032A;
+  --brand-ivory: #FFFFF1;
+  --brand-pale-pink: #FAA7E0;
+  --brand-mimi-pink: #FFE0F5;
+  
+  --border-light: #E5E2DA;
+  --border-dark: #1A1A1A;
+  --cream: #FFFFF1;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+  
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  overflow-x: hidden;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* Layout */
+.glossier-container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .glossier-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Typography utilities */
+.text-xs { font-size: 11px; }
+.text-sm { font-size: 13px; }
+.text-base { font-size: 15px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 24px; }
+.text-2xl { font-size: 32px; }
+.text-3xl { font-size: 44px; }
+
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.tracking-wide { letter-spacing: 0.08em; }
+.tracking-wider { letter-spacing: 0.12em; }
+.uppercase { text-transform: uppercase; }
+
+/* Buttons */
+.btn-glossier-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-dark);
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.15s ease;
+}
+
+.btn-glossier-outline:hover {
+  background-color: var(--text-main);
+  color: #FFFFFF;
+}
+
+.btn-glossier-fill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-dark);
+  background-color: var(--text-main);
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.15s ease;
+}
+
+.btn-glossier-fill:hover {
+  background-color: var(--brand-red);
+  border-color: var(--brand-red);
+}
+
+.btn-add-card {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background-color: #FFFFFF;
+  color: var(--text-main);
+  border: 1px solid var(--border-dark);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-add-card:hover {
+  background-color: var(--text-main);
+  color: #FFFFFF;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--border-dark);
+  background-color: var(--brand-red);
+  color: #FFFFFF;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: all 0.15s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-wine);
+  border-color: var(--brand-wine);
+  color: #FFFFFF;
+}
+
+/* Product Card */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  transition: transform 0.2s ease;
+}
+
+.product-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1.15;
+  background-color: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card-img-wrap img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-card-img-wrap img {
+  transform: scale(1.04);
+}
+
+/* Floating Card in Hero */
+.hero-floating-card {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-dark);
+  padding: 24px 28px;
+  max-width: 320px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .hero-floating-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+::-webkit-scrollbar-thumb {
+  background: #CCCCCC;
+}
