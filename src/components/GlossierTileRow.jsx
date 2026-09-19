@@ -9,7 +9,7 @@ export const GlossierTileRow = () => {
       href: '#shop',
     },
     {
-      img: '/assets/how-to-make-it-tile.jpg',
+      img: '/assets/how-to-make-it-tile-new.jpg',
       quote: 'froth it up.',
       label: 'How To Make It',
       href: '#ritual',
