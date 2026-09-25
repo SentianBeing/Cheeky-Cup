@@ -4,7 +4,7 @@ export const GlossierStoryHighlight = () => {
   return (
     <section id="story" style={{
       padding: '70px 0',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       <div className="glossier-container">

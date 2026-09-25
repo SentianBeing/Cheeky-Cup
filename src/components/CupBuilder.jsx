@@ -116,7 +116,7 @@ export const CupBuilder = () => {
                   <div style={{
                     display: 'inline-block',
                     background: preset.color,
-                    color: preset.color === '#84E45B' || preset.color === '#FFFFF1' ? '#141414' : '#FFFFFF',
+                    color: preset.color === 'var(--pale-pink)' || preset.color === '#FFFFF1' ? 'var(--tyrian-purple)' : 'var(--ivory)',
                     fontWeight: '900',
                     fontSize: '0.72rem',
                     textTransform: 'uppercase',
@@ -306,7 +306,7 @@ export const CupBuilder = () => {
                 display: 'flex',
                 alignItems: 'center',
                 gap: '0.75rem',
-                background: extraScoop ? '#EBFDE1' : 'rgba(88, 3, 42, 0.05)',
+                background: extraScoop ? 'var(--mimi-pink)' : 'rgba(88, 3, 42, 0.05)',
                 border: '1.5px solid var(--tyrian-purple)',
                 borderRadius: 'var(--radius-md)',
                 padding: '0.75rem 1rem',

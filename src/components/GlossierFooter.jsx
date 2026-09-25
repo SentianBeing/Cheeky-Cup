@@ -13,7 +13,7 @@ export const GlossierFooter = () => {
 
   return (
     <footer style={{
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       padding: '70px 0 40px',
       color: 'var(--text-main)',
     }}>

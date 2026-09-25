@@ -219,7 +219,7 @@ export const CartDrawer = () => {
                       </span>
                       <button
                         onClick={() => removeFromCart(item.id, item.option)}
-                        style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: '#999' }}
+                        style={{ background: 'transparent', border: 'none', cursor: 'pointer', color: 'var(--tyrian-purple)' }}
                       >
                         <Trash2 size={14} />
                       </button>

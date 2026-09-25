@@ -4,6 +4,9 @@ import { GlossierNavbar } from './components/GlossierNavbar';
 import { GlossierHero } from './components/GlossierHero';
 import { GlossierTileRow } from './components/GlossierTileRow';
 import { GlossierFeatureDuo } from './components/GlossierFeatureDuo';
+import { GlossierEditorialLookbook } from './components/GlossierEditorialLookbook';
+import { GlossierRitual } from './components/GlossierRitual';
+import { GlossierQualities } from './components/GlossierQualities';
 import { GlossierPDP } from './components/GlossierPDP';
 import { GlossierStoryHighlight } from './components/GlossierStoryHighlight';
 import { GlossierCaughtCheek } from './components/GlossierCaughtCheek';
@@ -14,16 +17,19 @@ import { CartDrawer } from './components/CartDrawer';
 export function App() {
   return (
     <CartProvider>
-      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#FFFFFF' }}>
+      <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--ivory)' }}>
         <GlossierNavbar />
         <main>
           <GlossierHero />
           <GlossierTileRow />
-          <GlossierFeatureDuo />
-          <GlossierPDP />
+          <GlossierQualities />
           <GlossierStoryHighlight />
+          <GlossierPDP />
+          <GlossierRitual />
+          <GlossierEditorialLookbook />
           <GlossierVideoSection />
           <GlossierCaughtCheek />
+          <GlossierFeatureDuo />
         </main>
         <GlossierFooter />
         <CartDrawer />

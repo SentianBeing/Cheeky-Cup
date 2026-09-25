@@ -4,7 +4,7 @@ export const GlossierFeatureDuo = () => {
   return (
     <section style={{
       padding: '0 0 60px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       <div className="glossier-container">
@@ -44,7 +44,7 @@ export const GlossierFeatureDuo = () => {
             justifyContent: 'center',
           }}>
             <img
-              src="/assets/banner-lifestyle.png"
+              src="/assets/CHEEKY-PHOTOSHOOT/9TH_IMG.png"
               alt="Cheeky Ceremonial Matcha Tin"
               style={{
                 width: '100%',
@@ -63,7 +63,7 @@ export const GlossierFeatureDuo = () => {
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                backgroundColor: '#FFFFFF',
+                backgroundColor: 'var(--ivory)',
                 color: 'var(--text-main)',
                 padding: '10px 22px',
                 fontSize: '12px',
@@ -76,7 +76,7 @@ export const GlossierFeatureDuo = () => {
                 zIndex: 2,
               }}
             >
-              Shop Tin
+              Discover The Grade
             </a>
           </div>
 
@@ -110,7 +110,7 @@ export const GlossierFeatureDuo = () => {
                 top: '50%',
                 left: '50%',
                 transform: 'translate(-50%, -50%)',
-                backgroundColor: '#FFFFFF',
+                backgroundColor: 'var(--ivory)',
                 color: 'var(--text-main)',
                 padding: '10px 22px',
                 fontSize: '12px',
@@ -123,7 +123,7 @@ export const GlossierFeatureDuo = () => {
                 zIndex: 2,
               }}
             >
-              Shop Starter Kit
+              The Daily Ritual
             </a>
           </div>
 

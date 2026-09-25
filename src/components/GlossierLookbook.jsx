@@ -10,7 +10,7 @@ export const GlossierLookbook = () => {
   return (
     <section id="ritual" style={{
       padding: '60px 0 80px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       <div className="glossier-container">

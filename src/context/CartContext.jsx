@@ -47,7 +47,7 @@ export const CartProvider = ({ children }) => {
         particleCount: 75,
         spread: 70,
         origin: { y: 0.7 },
-        colors: ['#FAA7E0', '#58032A', '#E1233C', '#76D448', '#FFE0F5']
+        colors: ['#FAA7E0', '#58032A', '#E1233C', 'var(--rusty-red)', '#FFE0F5']
       });
     } catch (e) {
       console.warn(e);

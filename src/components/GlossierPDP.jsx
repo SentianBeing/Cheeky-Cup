@@ -62,7 +62,7 @@ export const GlossierPDP = () => {
   return (
     <section id="shop" style={{
       padding: '70px 0 90px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       <div className="glossier-container">
@@ -81,7 +81,7 @@ export const GlossierPDP = () => {
               position: 'relative',
               width: '100%',
               aspectRatio: '1 / 1.08',
-              backgroundColor: 'var(--bg-secondary)',
+              backgroundColor: 'transparent',
               border: '1px solid var(--border-light)',
               display: 'flex',
               alignItems: 'center',
@@ -110,9 +110,9 @@ export const GlossierPDP = () => {
                 src={productImages[activeImageIndex].src}
                 alt={productImages[activeImageIndex].alt}
                 style={{
-                  maxWidth: '85%',
-                  maxHeight: '85%',
-                  objectFit: 'contain',
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
                   transition: 'transform 0.4s ease',
                 }}
               />
@@ -126,8 +126,8 @@ export const GlossierPDP = () => {
                   onClick={() => setActiveImageIndex(idx)}
                   style={{
                     aspectRatio: '1 / 1',
-                    padding: '6px',
-                    backgroundColor: 'var(--bg-secondary)',
+                    padding: '0px',
+                    backgroundColor: 'transparent',
                     border: activeImageIndex === idx ? '2px solid var(--border-dark)' : '1px solid var(--border-light)',
                     cursor: 'pointer',
                     display: 'flex',
@@ -135,6 +135,7 @@ export const GlossierPDP = () => {
                     justifyContent: 'center',
                     transition: 'all 0.15s ease',
                     opacity: activeImageIndex === idx ? 1 : 0.65,
+                    overflow: 'hidden',
                   }}
                 >
                   <img
@@ -168,7 +169,7 @@ export const GlossierPDP = () => {
 
             {/* Product Title */}
             <h1 style={{
-              fontFamily: "'Instrument Serif', Georgia, serif",
+              fontFamily: "var(--font-heading)",
               fontSize: 'clamp(2.2rem, 4.2vw, 3.4rem)',
               lineHeight: 1.1,
               fontWeight: '400',
@@ -229,7 +230,7 @@ export const GlossierPDP = () => {
                   alignItems: 'center',
                   padding: '14px 18px',
                   border: purchaseType === 'one-time' ? '2px solid var(--border-dark)' : '1px solid var(--border-light)',
-                  backgroundColor: purchaseType === 'one-time' ? '#FFFFFF' : 'var(--bg-secondary)',
+                  backgroundColor: purchaseType === 'one-time' ? 'var(--ivory)' : 'var(--bg-secondary)',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease',
                 }}
@@ -271,7 +272,7 @@ export const GlossierPDP = () => {
                   alignItems: 'center',
                   padding: '14px 18px',
                   border: purchaseType === 'subscribe' ? '2px solid var(--border-dark)' : '1px solid var(--border-light)',
-                  backgroundColor: purchaseType === 'subscribe' ? '#FFFFFF' : 'var(--bg-secondary)',
+                  backgroundColor: purchaseType === 'subscribe' ? 'var(--ivory)' : 'var(--bg-secondary)',
                   cursor: 'pointer',
                   transition: 'all 0.15s ease',
                   position: 'relative',
@@ -299,7 +300,7 @@ export const GlossierPDP = () => {
                       <span style={{
                         fontSize: '9px',
                         fontWeight: '800',
-                        color: '#FFFFFF',
+                        color: 'var(--ivory)',
                         backgroundColor: 'var(--brand-red)',
                         padding: '2px 6px',
                         letterSpacing: '0.04em',
@@ -331,7 +332,7 @@ export const GlossierPDP = () => {
                   border: '1px solid var(--border-dark)',
                   width: '120px',
                   padding: '0 8px',
-                  backgroundColor: '#FFFFFF',
+                  backgroundColor: 'var(--ivory)',
                 }}>
                   <button
                     onClick={() => setQuantity((q) => Math.max(1, q - 1))}

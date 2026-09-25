@@ -6,49 +6,49 @@ export const GlossierCaughtCheek = () => {
 
   const galleryItems = [
     {
-      img: '/assets/matcha-iced-pour.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/4TH_IMG.png',
       caption: 'The Daily Cold Foam Pour',
       tag: '@cheekycupof',
       offset: 'up',
     },
     {
-      img: '/assets/whisk-ritual-1.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/6TH_IMG.png',
       caption: '30-Second Microfoam Ritual',
       tag: '#CaughtTheCheek',
       offset: 'down',
     },
     {
-      img: '/assets/latte-art.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/7TH_IMG.png',
       caption: 'Velvet Green Crema',
       tag: 'Talia’s Recipe',
       offset: 'up',
     },
     {
-      img: '/assets/section-lifestyle.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/11TH_IMG.png',
       caption: 'Morning Ritual with Double Tin',
       tag: '@cheekycupof',
       offset: 'down',
     },
     {
-      img: '/assets/matcha-glass.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/12TH_IMG.png',
       caption: 'Cheeky Tumbler & Decals',
       tag: '#CaughtTheCheek',
       offset: 'up',
     },
     {
-      img: '/assets/whisk-ritual-2.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/13TH_IMG.png',
       caption: 'Single Origin Japanese Tencha',
       tag: 'Zero Bitterness',
       offset: 'down',
     },
     {
-      img: '/assets/hero-talia.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/14TH_IMG.png',
       caption: 'Talia sips Cheeky on set',
       tag: '@talia',
       offset: 'up',
     },
     {
-      img: '/assets/tin-closeup.png',
+      img: '/assets/CHEEKY-PHOTOSHOOT/15TH_IMG.png',
       caption: 'First Harvest Ceremonial Grade',
       tag: '#CaughtTheCheek',
       offset: 'down',
@@ -80,28 +80,18 @@ export const GlossierCaughtCheek = () => {
 
     animationId = requestAnimationFrame(animate);
 
-    const slider = sliderRef.current;
-    if (slider) {
-      slider.addEventListener('mouseenter', () => isPaused = true);
-      slider.addEventListener('mouseleave', () => isPaused = false);
-    }
-
     return () => {
       cancelAnimationFrame(animationId);
-      if (slider) {
-        slider.removeEventListener('mouseenter', () => isPaused = true);
-        slider.removeEventListener('mouseleave', () => isPaused = false);
-      }
     };
   }, []);
 
   return (
-    <section id="ritual" style={{ backgroundColor: '#FFFFFF', overflow: 'hidden' }}>
+    <section id="ritual" style={{ backgroundColor: 'var(--ivory)', overflow: 'hidden' }}>
       
       {/* 2. Staggered "Up / Down" Image Slider Gallery */}
       <div style={{
         padding: '70px 0 90px',
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'var(--ivory)',
         borderBottom: '1px solid var(--border-light)',
       }}>
         <div className="glossier-container">
@@ -144,7 +134,7 @@ export const GlossierCaughtCheek = () => {
                   height: '38px',
                   borderRadius: '0px',
                   border: '1px solid var(--border-dark)',
-                  backgroundColor: '#FFFFFF',
+                  backgroundColor: 'var(--ivory)',
                   color: 'var(--text-main)',
                   display: 'flex',
                   alignItems: 'center',
@@ -154,10 +144,10 @@ export const GlossierCaughtCheek = () => {
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = 'var(--text-main)';
-                  e.currentTarget.style.color = '#FFFFFF';
+                  e.currentTarget.style.color = 'var(--ivory)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = '#FFFFFF';
+                  e.currentTarget.style.backgroundColor = 'var(--ivory)';
                   e.currentTarget.style.color = 'var(--text-main)';
                 }}
               >
@@ -172,7 +162,7 @@ export const GlossierCaughtCheek = () => {
                   height: '38px',
                   borderRadius: '0px',
                   border: '1px solid var(--border-dark)',
-                  backgroundColor: '#FFFFFF',
+                  backgroundColor: 'var(--ivory)',
                   color: 'var(--text-main)',
                   display: 'flex',
                   alignItems: 'center',
@@ -182,10 +172,10 @@ export const GlossierCaughtCheek = () => {
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.backgroundColor = 'var(--text-main)';
-                  e.currentTarget.style.color = '#FFFFFF';
+                  e.currentTarget.style.color = 'var(--ivory)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.backgroundColor = '#FFFFFF';
+                  e.currentTarget.style.backgroundColor = 'var(--ivory)';
                   e.currentTarget.style.color = 'var(--text-main)';
                 }}
               >
@@ -301,7 +291,7 @@ export const GlossierCaughtCheek = () => {
         justifyContent: 'center',
         padding: '80px 24px',
         overflow: 'hidden',
-        backgroundColor: '#1A1A1A',
+        backgroundColor: 'var(--tyrian-purple)',
       }} className="caught-cheek-banner">
         
         {/* Background Image with Subtle Blur & Cinematic Overlay */}
@@ -340,7 +330,7 @@ export const GlossierCaughtCheek = () => {
           padding: '20px',
         }}>
           <p style={{
-            fontFamily: "'Instrument Serif', Georgia, serif",
+            fontFamily: "var(--font-heading)",
             fontStyle: 'italic',
             fontSize: 'clamp(1.5rem, 2.5vw, 2.2rem)',
             color: '#FFFFF1',
@@ -351,7 +341,7 @@ export const GlossierCaughtCheek = () => {
           </p>
 
           <h2 style={{
-            fontFamily: "'Instrument Serif', Georgia, serif",
+            fontFamily: "var(--font-heading)",
             fontSize: 'clamp(2.2rem, 4.5vw, 4.2rem)',
             lineHeight: 1.05,
             color: '#FFFFF1',
@@ -368,22 +358,22 @@ export const GlossierCaughtCheek = () => {
               display: 'inline-block',
               marginTop: '32px',
               padding: '14px 32px',
-              backgroundColor: '#FFFFFF',
+              backgroundColor: 'var(--ivory)',
               color: 'var(--text-main)',
               fontSize: '12px',
               fontWeight: '700',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               textDecoration: 'none',
-              border: '1px solid #FFFFFF',
+              border: '1px solid var(--ivory)',
               transition: 'background-color 0.2s ease, color 0.2s ease',
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.backgroundColor = 'transparent';
-              e.currentTarget.style.color = '#FFFFFF';
+              e.currentTarget.style.color = 'var(--ivory)';
             }}
             onMouseOut={(e) => {
-              e.currentTarget.style.backgroundColor = '#FFFFFF';
+              e.currentTarget.style.backgroundColor = 'var(--ivory)';
               e.currentTarget.style.color = 'var(--text-main)';
             }}
           >

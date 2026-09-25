@@ -143,19 +143,19 @@ export const QualityComparison = () => {
                 width: '44px',
                 height: '44px',
                 borderRadius: '50%',
-                background: '#EAEAEA',
+                background: 'var(--silver)',
                 border: '2px solid rgba(88, 3, 42, 0.3)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <X size={22} color="#888888" />
+                <X size={22} color="var(--tyrian-purple)" />
               </div>
               <div>
                 <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: 'rgba(88, 3, 42, 0.6)', textTransform: 'uppercase' }}>
                   Standard / Culinary Matcha
                 </h3>
-                <p style={{ fontSize: '0.82rem', fontWeight: '600', color: '#777' }}>
+                <p style={{ fontSize: '0.82rem', fontWeight: '600', color: 'var(--tyrian-purple)' }}>
                   Late Harvest / Mass Commercial Blends
                 </p>
               </div>
@@ -174,8 +174,8 @@ export const QualityComparison = () => {
                     width: '24px',
                     height: '24px',
                     borderRadius: '50%',
-                    background: '#CCCCCC',
-                    color: '#666666',
+                    background: 'var(--silver)',
+                    color: 'var(--tyrian-purple)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -188,7 +188,7 @@ export const QualityComparison = () => {
                     <p style={{ fontSize: '0.95rem', fontWeight: '700', color: 'rgba(88, 3, 42, 0.6)' }}>
                       {item.title}
                     </p>
-                    <p style={{ fontSize: '0.82rem', color: '#888', lineHeight: 1.4 }}>
+                    <p style={{ fontSize: '0.82rem', color: 'var(--tyrian-purple)', lineHeight: 1.4 }}>
                       {item.desc}
                     </p>
                   </div>

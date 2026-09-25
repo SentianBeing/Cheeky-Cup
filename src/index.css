@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Work+Sans:ital,wght@0,300..700;1,300..700&family=Jost:wght@300..700&display=swap');
 
 :root {
   /* Brand Guidelines Primary Colors */
@@ -9,15 +9,16 @@
 
   /* Brand Guidelines Secondary Colors */
   --mimi-pink: #FFE0F5;
+  --silver: #CCCCCC;
 
   /* Glossier-inspired & Semantic Palette */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #FFFFF1;
-  --bg-card: #FFFFF1;
-  --bg-pink: #FFE0F5;
-  --text-main: #1A1A1A;
-  --text-muted: #666666;
-  --text-subtle: #8E8E8E;
+  --bg-primary: var(--ivory);
+  --bg-secondary: var(--mimi-pink);
+  --bg-card: var(--ivory);
+  --bg-pink: var(--pale-pink);
+  --text-main: var(--tyrian-purple);
+  --text-muted: var(--tyrian-purple);
+  --text-subtle: var(--tyrian-purple); /* Leave standard subtle grey for very light text if needed */
   
   --brand-red: #E1233C;
   --brand-wine: #58032A;
@@ -25,15 +26,22 @@
   --brand-pale-pink: #FAA7E0;
   --brand-mimi-pink: #FFE0F5;
   
-  --border-light: #E5E2DA;
-  --border-dark: #1A1A1A;
-  --cream: #FFFFF1;
+  --border-light: var(--silver);
+  --border-dark: var(--tyrian-purple);
+  --cream: var(--ivory);
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-full: 9999px;
   
-  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: 'Instrument Serif', Georgia, serif;
+  /* Typography System */
+  /* Note: Calder LC is a commercial font. Using 'Jost' as a close geometric sans-serif fallback until font files are provided. */
+  --font-display: 'Calder LC', 'Jost', sans-serif;
+  --font-heading: 'Barriecito', cursive;
+  --font-body: 'Work Sans', sans-serif;
+  
+  /* Aliases for legacy component styles */
+  --font-sans: var(--font-display);
+  --font-serif: var(--font-heading);
 }
 
 *, *::before, *::after {
@@ -49,7 +57,7 @@ html {
 }
 
 body {
-  font-family: var(--font-main);
+  font-family: var(--font-body);
   background-color: var(--bg-primary);
   color: var(--text-main);
   overflow-x: hidden;
@@ -75,6 +83,20 @@ body {
 }
 
 /* Typography utilities */
+.font-display, .font-sans {
+  font-family: var(--font-display) !important;
+  text-transform: uppercase;
+}
+
+.font-heading, .italic-serif {
+  font-family: var(--font-heading) !important;
+  font-style: normal !important;
+}
+
+.font-body {
+  font-family: var(--font-body) !important;
+}
+
 .text-xs { font-size: 11px; }
 .text-sm { font-size: 13px; }
 .text-base { font-size: 15px; }
@@ -103,7 +125,7 @@ body {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   border: 1px solid var(--border-dark);
-  background-color: #FFFFFF;
+  background-color: var(--ivory);
   color: var(--text-main);
   text-decoration: none;
   cursor: pointer;
@@ -113,7 +135,7 @@ body {
 
 .btn-glossier-outline:hover {
   background-color: var(--text-main);
-  color: #FFFFFF;
+  color: var(--ivory);
 }
 
 .btn-glossier-fill {
@@ -127,7 +149,7 @@ body {
   text-transform: uppercase;
   border: 1px solid var(--border-dark);
   background-color: var(--text-main);
-  color: #FFFFFF;
+  color: var(--ivory);
   text-decoration: none;
   cursor: pointer;
   border-radius: 0px;
@@ -146,7 +168,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  background-color: #FFFFFF;
+  background-color: var(--ivory);
   color: var(--text-main);
   border: 1px solid var(--border-dark);
   cursor: pointer;
@@ -155,7 +177,7 @@ body {
 
 .btn-add-card:hover {
   background-color: var(--text-main);
-  color: #FFFFFF;
+  color: var(--ivory);
 }
 
 .btn-primary {
@@ -169,7 +191,7 @@ body {
   text-transform: uppercase;
   border: 1px solid var(--border-dark);
   background-color: var(--brand-red);
-  color: #FFFFFF;
+  color: var(--ivory);
   text-decoration: none;
   cursor: pointer;
   border-radius: 0px;
@@ -179,7 +201,7 @@ body {
 .btn-primary:hover {
   background-color: var(--brand-wine);
   border-color: var(--brand-wine);
-  color: #FFFFFF;
+  color: var(--ivory);
 }
 
 /* Product Card */
@@ -217,7 +239,7 @@ body {
   position: absolute;
   top: 40px;
   left: 40px;
-  background-color: #FFFFFF;
+  background-color: var(--ivory);
   border: 1px solid var(--border-dark);
   padding: 24px 28px;
   max-width: 320px;
@@ -239,7 +261,7 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #FFFFFF;
+  background: var(--ivory);
 }
 ::-webkit-scrollbar-thumb {
   background: #CCCCCC;

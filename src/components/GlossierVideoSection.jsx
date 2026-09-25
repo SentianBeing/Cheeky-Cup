@@ -9,7 +9,7 @@ export const GlossierVideoSection = () => {
       minHeight: '80vh',
       display: 'flex',
       alignItems: 'flex-end',
-      backgroundColor: '#1A1A1A',
+      backgroundColor: 'var(--tyrian-purple)',
       overflow: 'hidden',
     }}>
       
@@ -59,17 +59,17 @@ export const GlossierVideoSection = () => {
             fontWeight: '700',
             letterSpacing: '0.12em',
             textTransform: 'uppercase',
-            color: '#FFFFFF',
+            color: 'var(--ivory)',
             marginBottom: '12px',
             opacity: 0.9,
           }}>
             The Vibe Check
           </p>
           <h2 style={{
-            fontFamily: "'Instrument Serif', Georgia, serif",
+            fontFamily: "var(--font-heading)",
             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
             lineHeight: 1.05,
-            color: '#FFFFFF',
+            color: 'var(--ivory)',
             letterSpacing: '-0.02em',
             marginBottom: '16px',
             textShadow: '0 2px 14px rgba(0,0,0,0.4)',
@@ -80,7 +80,7 @@ export const GlossierVideoSection = () => {
           <p style={{
             fontSize: '15px',
             lineHeight: 1.6,
-            color: '#F4F4F4',
+            color: 'var(--silver)',
             marginBottom: '28px',
             textShadow: '0 1px 8px rgba(0,0,0,0.4)',
           }}>
@@ -91,7 +91,7 @@ export const GlossierVideoSection = () => {
             style={{
               display: 'inline-block',
               padding: '12px 28px',
-              backgroundColor: '#FFFFFF',
+              backgroundColor: 'var(--ivory)',
               color: 'var(--text-main)',
               fontSize: '12px',
               fontWeight: '700',

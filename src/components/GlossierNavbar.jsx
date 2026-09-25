@@ -18,12 +18,12 @@ export const GlossierNavbar = () => {
       position: 'sticky',
       top: 0,
       zIndex: 50,
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       {/* Top micro announcement bar */}
       <div style={{
-        backgroundColor: '#FFFFFF',
+        backgroundColor: 'var(--ivory)',
         borderBottom: '1px solid var(--border-light)',
         textAlign: 'center',
         padding: '8px 16px',
@@ -138,7 +138,7 @@ export const GlossierNavbar = () => {
       {/* Mobile Drawer */}
       {mobileOpen && (
         <div style={{
-          backgroundColor: '#FFFFFF',
+          backgroundColor: 'var(--ivory)',
           borderTop: '1px solid var(--border-light)',
           padding: '20px 24px',
           display: 'flex',

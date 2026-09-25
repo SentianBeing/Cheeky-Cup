@@ -31,7 +31,7 @@ export const GlossierTileRow = () => {
   return (
     <section style={{
       padding: '40px 0 60px',
-      backgroundColor: '#FFFFFF',
+      backgroundColor: 'var(--ivory)',
       borderBottom: '1px solid var(--border-light)',
     }}>
       <div className="glossier-container">
@@ -87,7 +87,7 @@ export const GlossierTileRow = () => {
                   pointerEvents: 'none',
                 }}>
                   <p style={{
-                    color: '#FFFFFF',
+                    color: 'var(--ivory)',
                     fontSize: '13px',
                     fontWeight: '600',
                     textAlign: 'center',
